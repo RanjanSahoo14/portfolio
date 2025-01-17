@@ -1,0 +1,567 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+#hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #f4fae2;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  width: 84%;
+  margin: auto;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.logo {
+  width: 150px;
+  cursor: pointer;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000a8;
+  font-weight: bold;
+  transition: 0.25s ease;
+}
+
+/*nav ul li a:hover {
+  color: red;
+}*/
+ul:hover a:hover {
+  color: rgb(255, 0, 0);
+  box-shadow: 0 2px 0 0 currentColor;
+}
+
+.detel {
+  margin-left: 8%;
+  margin-top: 15%;
+}
+
+.detel h1 {
+  font-size: 50px;
+  color: #212121;
+  margin-bottom: 20px;
+}
+
+span {
+  color: rgb(255, 55, 0);
+}
+
+.detel p {
+  color: #555;
+  line-height: 22px;
+}
+
+.detel a {
+  background: #212121;
+  padding: 10px 18px; /*download cv er er chokh koto boro hobe,the area of background download cv capture */
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  display: inline-block;
+  margin: 30px 0; /* margin theke kotota dure thakbe*/
+  border-radius: 1000px; /*border er corner kotota mora thakbe*/
+}
+
+.detel a:hover {
+  color: rgb(1, 1, 1);
+  background: rgb(65, 159, 236);
+}
+
+.images {
+  width: 45%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  cursor: pointer;
+}
+
+.images img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-30%);
+  transition: ease-in-out 1s;
+}
+
+.images:hover .shape {
+  bottom: 50px;
+}
+
+.images:hover .character {
+  left: 45%;
+}
+
+.social {
+  margin-left: 8%;
+  margin-top: 80px;
+}
+
+.social a {
+  font-size: 30px;
+  color: #212121;
+  margin-right: 20px; /* margin between every logo*/
+  transition: all 1s ease-in-out;
+}
+
+.social a:hover i.fa-github {
+  color: rgb(190, 196, 199);
+  transform: translatey(-50%);
+}
+.social a:hover i.fa-linkedin {
+  color: rgb(0, 144, 227);
+  transform: translatey(-50%);
+}
+.social a:hover i.fa-whatsapp {
+  color: rgb(0, 255, 30);
+  transform: translatey(-50%);
+}
+.social a:hover i.fa-facebook {
+  color: rgb(24, 168, 252);
+  transform: translatey(-50%);
+}
+.social a:hover i.fa-instagram {
+  color: rgb(223, 44, 185);
+  transform: translatey(-50%);
+}
+.social a:hover i.fa-google {
+  color: rgb(135, 0, 253);
+  transform: translatey(-50%);
+}
+/* ABOUT PART */
+#second {
+  background-color: #f8f9d8;
+  height: 750px;
+  width: 100%;
+}
+#second img {
+  height: 480px;
+  width: 480px;
+  margin: 0 auto;
+  padding: auto;
+  position: relative;
+  top: 125px;
+  left: 10%;
+  border-style: solid;
+  border-radius: 100%;
+  border-width: 5px;
+  border-color: white;
+  box-shadow: 0px 0px 25px 15px rgb(81, 86, 88);
+  cursor: pointer;
+  /* transition: transform 0.2s; Animation */
+  transition: ease-in-out 0.5s;
+}
+#second img:hover {
+  /* transform: scale(1.07);  (107% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  scale: 1.07;
+  box-shadow: 0px 0px 2px 25px rgb(154, 153, 140);
+}
+.about {
+  display: inline-block;
+  position: relative;
+  top: 30px;
+  left: 25%;
+  width: 35%;
+  box-sizing: border box;
+}
+.about h1 {
+  position: relative;
+  right: 20px;
+  font-size: 50px;
+  font-weight: 50px;
+  color: rgb(114, 0, 0);
+  margin: 30px 90px 30px 10px;
+  padding: 10px;
+}
+.about p {
+  line-height: 30px;
+}
+/* @keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#second {
+  animation: fadeInUp 1s ease forwards;
+} */
+
+/*3rd section education*/
+#EDUCATION {
+  background-color: #f1edde;
+  height: 780px;
+  width: 100%;
+}
+#EDUCATION header {
+  display: inline-block;
+  position: relative;
+  top: 50px;
+  left: 18%;
+  font-size: 80px;
+  font-weight: 25px;
+  text-indent: 50px;
+  letter-spacing: 50px;
+  box-shadow: 0px 0px 15px 15px rgb(177, 156, 121);
+}
+#EDUCATION img {
+  height: 550px;
+  width: 550px;
+  margin: 0 auto;
+  padding: auto;
+  position: relative;
+  top: 90px;
+  left: 32%;
+}
+#EDUCATION #edu {
+  display: inline-block;
+  border: solid 2px black;
+  padding: 1.5%;
+  box-sizing: border-box;
+}
+#EDUCATION .MCA {
+  position: relative;
+  background: rgb(233, 218, 218);
+  border-radius: 10px;
+  bottom: 352px;
+  left: 15.8%;
+}
+#EDUCATION .BCA {
+  position: relative;
+  background: rgb(233, 218, 218);
+  border-radius: 10px;
+  bottom: 355px;
+  left: 7.2%;
+}
+#EDUCATION .HS {
+  position: relative;
+  background: rgb(233, 218, 218);
+  border-radius: 10px;
+  bottom: 220px;
+  left: 11.8%;
+}
+#EDUCATION .MP {
+  position: relative;
+  background: rgb(233, 218, 218);
+  border-radius: 10px;
+  bottom: 77px;
+  right: 40%;
+}
+#EDUCATION .MCA,
+.HS {
+  @extend #EDUCATION .edu1, .edu3;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 13px solid transparent;
+    border-right-color: #32557f;
+    border-left: 0;
+    margin-top: -13px;
+    margin-left: -13px;
+  }
+}
+#EDUCATION .BCA,
+.MP {
+  @extend #EDUCATION .edu2, .edu4;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 13px solid transparent;
+    border-left-color: #32557f;
+    border-right: 0;
+    margin-top: -13px;
+    margin-right: -13px;
+  }
+}
+.edumark {
+  position: relative;
+  top: 10px;
+  font-size: 18px;
+  opacity: 0; /*opasity is for visibility of element; */
+  transition: all 0.7s linear 0s;
+}
+#edu:hover .edumark {
+  opacity: 1; /*visiblity avalibale*/
+  filter: drop-shadow(0px 0px 15px rgb(75, 75, 75));
+}
+
+/*4th section skills*/
+#SKILLS {
+  background-color: #e6e2c8;
+  height: 750px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+#SKILLS header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+  top: 5%;
+  height: 10%;
+  font-size: 60px;
+  font-weight: 25px;
+  text-indent: 50px;
+  letter-spacing: 50px;
+  box-shadow: 10px 10px 10px 5px rgb(177, 156, 121);
+}
+#SKILLS .mainskills {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 17%;
+  gap: 10vh;
+}
+.mainskills img {
+  height: 200px;
+  width: 200px;
+}
+.mainskills .myskills {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+  gap: 80px;
+}
+
+/*5th section cartificate*/
+
+#CERTIFICATE {
+  background-color: #d4d1b9;
+  height: 750px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+#CERTIFICATE header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+  top: 5%;
+  left: 17%;
+  height: 10%;
+  font-size: 60px;
+  font-weight: 25px;
+  text-indent: 50px;
+  letter-spacing: 50px;
+  box-shadow: 10px 10px 10px rgb(177, 156, 121);
+}
+#CERTIFICATE .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 6vw;
+  position: relative;
+  bottom: 25%;
+  left: 7.5%;
+}
+.card {
+  background-color: rgb(255, 255, 255);
+  height: 500px;
+  width: 350px;
+  padding: 10px;
+  border-radius: 20px;
+  display: inline-block;
+  flex-direction: coloum;
+  align-items: center;
+  position: relative;
+  top: 180px;
+  box-shadow: 10px 10px 1px rgb(26, 26, 26);
+  text-align: center;
+  transition: ease-in-out 0.5s;
+}
+.card img {
+  position: relative;
+  height: 55%;
+  width: 100%;
+  border-radius: 10px;
+}
+.card:hover {
+  scale: 1.08;
+  box-shadow: 2px 7px 25px 7px rgb(92, 92, 92);
+}
+.card button {
+  border-color: rgb(54, 54, 54);
+}
+.card button a {
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+}
+/*5th section contact*/
+
+#CONTACT {
+  background-color: #e4e1c5;
+  height: 700px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+#CONTACT .contactcard {
+  height: 85%;
+  width: 30%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 25px rgb(45, 45, 45);
+  transition: all 0.7s linear 0s;
+}
+.contactcard:hover {
+  scale: 1.05;
+  box-shadow: 0px 0px 30px rgb(65, 65, 65);
+}
+.contactcard header {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 10px;
+  text-indent: 5px;
+  padding: 15px;
+  border-bottom: 3px solid rgb(126, 125, 125);
+  border-radius: 10px;
+  background-color: #f4f3f3;
+}
+.contactdetails {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 90px;
+  position: relative;
+  top: 15%;
+  right: 0%;
+}
+.contactdetails div {
+  display: inline-flex;
+  gap: 50px;
+}
+.takeph,
+.takeeml {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 300px;
+  background-color: #f3f0f0;
+  border: 3px solid rgb(56, 56, 56);
+  border-radius: 5px;
+  text-align: center;
+}
+.ph svg {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+.eml svg {
+  scale: 400%;
+  cursor: pointer;
+}
+.takeph {
+  position: relative;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+}
+.takeeml {
+  position: relative;
+  top: -8px;
+  cursor: pointer;
+}
+.takeph a,
+.takeeml a {
+  text-decoration: none;
+  color: #000b39a8;
+  font-weight: bold;
+}
+.socialcontact i {
+  font-size: 50px;
+}
+.socialcontact i.fa-linkedin {
+  color: rgb(0, 144, 227);
+}
+.socialcontact i.fa-whatsapp {
+  color: rgb(0, 255, 30);
+}
+.socialcontact i.fa-instagram {
+  color: rgb(223, 44, 185);
+}
+
+.movetop {
+  display: inline-flex;
+  position: fixed;
+  bottom: 7vh;
+  left: 83vw;
+  gap: 15px;
+}
+.movetop img {
+  height: 50px;
+  width: 50px;
+}
+.movetop p {
+  position: relative;
+  top: -3vh;
+  background-color: #82828235;
+  padding: 10px;
+  border-radius: 20px;
+  opacity: 0;
+  transition: all 0.5s linear 0s;
+}
+.movetop:hover p {
+  opacity: 1;
+}
+footer {
+  background-color: rgb(22, 22, 22);
+}
+footer p {
+  color: rgb(215, 212, 212);
+}
